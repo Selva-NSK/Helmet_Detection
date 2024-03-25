@@ -7,7 +7,7 @@ from tqdm.auto import tqdm
 import subprocess
 
 model = YOLO('best.pt',verbose=False)
-model2 = YOLO('license_plate_detector.pt',verbose=False)
+model2 = YOLO('../../Downloads/content/license_plate_detector.pt', verbose=False)
 
 def predict(chosen_model, img, classes=[], conf=0.5):
     if classes:

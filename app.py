@@ -43,7 +43,7 @@ def main():
             if st.button('Predict', key='predict_button'):
                 with st.spinner('Processing video...'):
                     result_path = pred_vid(video_path)
-                    st.video(result_path)
+                    st.video(result_path, format="mp4")
 
     # Add custom CSS for styled button
     predict_button_style = """
@@ -67,6 +67,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
